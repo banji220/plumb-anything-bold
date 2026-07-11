@@ -27,8 +27,8 @@
   --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
-  --max: 1240px;
-  --pad: clamp(20px, 5vw, 48px);
+  --max: 1200px;
+  --pad: clamp(20px, 5vw, 40px);
 }
 
 /* ---------- Reset ---------- */
