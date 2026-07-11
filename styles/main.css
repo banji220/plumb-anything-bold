@@ -425,3 +425,89 @@ body { padding-bottom: 76px; }
   * { transition: none !important; animation: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- Heritage / 4th-generation brand elements ---------- */
+.heritage-pill {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--black); color: var(--white);
+  border: var(--border-thick); border-radius: 999px;
+  padding: 10px 16px; box-shadow: var(--shadow-sm);
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .18em;
+  text-transform: uppercase; font-weight: 700;
+  margin-bottom: 22px;
+}
+.heritage-pill svg { width: 16px; height: 16px; color: var(--blue); }
+
+.hero-sub {
+  font-family: var(--font-mono); font-size: 13px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--black);
+  margin: 20px 0 0; max-width: 52ch;
+  border-left: 3px solid var(--blue); padding: 4px 0 4px 14px;
+  line-height: 1.5;
+}
+
+.heritage-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--blue); color: var(--white);
+  border: var(--border); box-shadow: 3px 3px 0 0 var(--black);
+  padding: 8px 12px; border-radius: 10px;
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: .18em;
+  text-transform: uppercase; font-weight: 700;
+}
+.heritage-badge svg { width: 14px; height: 14px; }
+.heritage-badge strong {
+  font-family: var(--font-display); font-size: 13px;
+  letter-spacing: -.01em; font-weight: 700;
+}
+
+.heritage-strip {
+  display: inline-flex; align-items: center; gap: 12px;
+  margin-bottom: 20px;
+}
+
+.gen-cards {
+  display: grid; gap: 20px; grid-template-columns: 1fr;
+  margin-top: 32px;
+}
+@media (min-width: 720px)  { .gen-cards { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1040px) { .gen-cards { grid-template-columns: repeat(4, 1fr); } }
+.gen-card {
+  background: var(--white); border: var(--border-thick);
+  border-radius: var(--radius); padding: 22px;
+  box-shadow: var(--shadow);
+  display: flex; flex-direction: column; gap: 10px;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.gen-card:hover { transform: translate(-3px,-3px); box-shadow: 11px 11px 0 0 var(--black); }
+.gen-card .num {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--blue); font-weight: 700;
+}
+.gen-card h3 { font-size: 22px; margin: 0; }
+.gen-card p  { font-family: var(--font-serif); font-size: 15px; margin: 0; }
+
+.pullquote {
+  margin: 56px 0 0; padding: clamp(32px, 5vw, 56px) clamp(24px, 5vw, 56px);
+  background: var(--black); color: var(--white);
+  border: var(--border-thick); border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(28px, 5vw, 56px); letter-spacing: -.035em; line-height: 1.02;
+}
+.pullquote em { font-style: normal; color: var(--blue); }
+.pullquote cite {
+  display: block; margin-top: 22px;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .2em;
+  text-transform: uppercase; font-style: normal; font-weight: 500;
+  color: rgba(255,255,255,.7);
+}
+
+.heritage-note {
+  display: flex; align-items: center; gap: 10px;
+  margin: 20px 0 0; padding: 12px 14px;
+  background: var(--white); border: var(--border); border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.heritage-note svg { width: 16px; height: 16px; color: var(--blue); flex-shrink: 0; }
