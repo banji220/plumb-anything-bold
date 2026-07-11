@@ -23,9 +23,9 @@
   --radius: 18px;
   --radius-sm: 10px;
 
-  --font-display: "Archivo", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-serif: "Spectral", Georgia, "Times New Roman", serif;
-  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
   --max: 1240px;
   --pad: clamp(20px, 5vw, 48px);
