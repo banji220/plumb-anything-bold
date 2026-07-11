@@ -117,11 +117,12 @@ p  { margin: 0 0 1em; }
   letter-spacing: -0.02em; font-size: 20px;
 }
 .brand-mark {
-  width: 40px; height: 40px; border-radius: 10px;
+  width: 44px; height: 44px; border-radius: 12px;
   display: grid; place-items: center; overflow: hidden;
-  border: var(--border);
+  border: var(--border); box-shadow: 3px 3px 0 0 var(--black);
+  background: var(--blue);
 }
-.brand-mark img { width: 40px; height: 40px; display: block; }
+.brand-mark img { width: 100%; height: 100%; display: block; object-fit: cover; image-rendering: -webkit-optimize-contrast; }
 .nav-links { display: none; }
 .nav-links a {
   font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em;
