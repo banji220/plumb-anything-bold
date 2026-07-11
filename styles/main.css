@@ -516,10 +516,11 @@ body { padding-bottom: 76px; }
 .quote-band {
   background: #2C3C83; color: var(--white);
   border-top: 4px solid var(--black); border-bottom: 4px solid var(--black);
-  padding-block: clamp(3.5rem, 7vw, 6rem);
+  padding-block: clamp(4rem, 8vw, 6.5rem);
+  padding-inline: clamp(24px, 8vw, 80px);
   text-align: center;
 }
-.quote-band .container { max-width: 1080px; }
+.quote-band .container { max-width: 900px; padding-inline: 0; }
 .quote-band .eyebrow {
   color: var(--white); font-family: "Space Mono", ui-monospace, SFMono-Regular, monospace;
   font-size: 12px; letter-spacing: .28em; text-transform: uppercase;
@@ -527,10 +528,10 @@ body { padding-bottom: 76px; }
 }
 .quote-band .eyebrow::before { background: var(--white); }
 .quote-band p.promise {
-  margin: 24px auto 0;
+  margin: 1.25rem auto 0;
   font-family: "Archivo", ui-sans-serif, system-ui, sans-serif;
   font-weight: 900; text-transform: uppercase;
-  font-size: clamp(36px, 7vw, 96px);
-  letter-spacing: -0.04em; line-height: .95;
-  color: var(--white); max-width: 18ch;
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: -0.02em; line-height: 1.05;
+  color: var(--white); max-width: 20ch;
 }
