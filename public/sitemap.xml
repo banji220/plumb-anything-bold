@@ -4,6 +4,6 @@
   <url><loc>/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>/services.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>/services/drain-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>/service-areas/irvine.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>/service-areas/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>/contact.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
