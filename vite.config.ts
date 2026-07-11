@@ -17,7 +17,7 @@ export default defineConfig({
         about: resolve(__dirname, "about.html"),
         services: resolve(__dirname, "services.html"),
         drainCleaning: resolve(__dirname, "services/drain-cleaning.html"),
-        irvine: resolve(__dirname, "service-areas/irvine.html"),
+        serviceAreas: resolve(__dirname, "service-areas/index.html"),
         contact: resolve(__dirname, "contact.html"),
         notFound: resolve(__dirname, "404.html"),
       },
