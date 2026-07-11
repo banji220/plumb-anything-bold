@@ -79,7 +79,7 @@ p  { margin: 0 0 1em; }
 
 /* ---------- Layout primitives ---------- */
 .container { width: 100%; max-width: var(--max); margin-inline: auto; padding-inline: var(--pad); }
-.section { padding-block: clamp(64px, 10vw, 120px); }
+.section { padding-block: clamp(56px, 6vw, 88px); }
 .stack > * + * { margin-top: 1rem; }
 .grid { display: grid; gap: 24px; }
 @media (min-width: 720px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
@@ -361,7 +361,7 @@ body { padding-bottom: 76px; }
 
 /* ---------- Service / city page layouts ---------- */
 .page-hero {
-  padding-block: clamp(48px, 8vw, 96px);
+  padding-block: clamp(40px, 5vw, 72px);
   border-bottom: var(--border);
 }
 .page-hero h1 { font-size: clamp(48px, 10vw, 104px); }
@@ -516,7 +516,7 @@ body { padding-bottom: 76px; }
 .quote-band {
   background: #2C3C83; color: var(--white);
   border-top: 4px solid var(--black); border-bottom: 4px solid var(--black);
-  padding-block: clamp(72px, 12vw, 140px);
+  padding-block: clamp(56px, 7vw, 88px);
   text-align: center;
 }
 .quote-band .container { max-width: 1080px; }
