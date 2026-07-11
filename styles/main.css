@@ -235,13 +235,13 @@ p  { margin: 0 0 1em; }
 .trust-item strong { display: block; font-family: var(--font-display); font-size: 16px; letter-spacing: -0.01em; margin-top: 4px; }
 
 /* ---------- Service cards ---------- */
-.services-row { display: grid; gap: 20px; grid-template-columns: 1fr; }
+.services-row { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
 @media (min-width: 720px) { .services-row { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1040px) { .services-row { grid-template-columns: repeat(3, 1fr); } }
 .card {
   background: var(--white); border: var(--border-thick);
   border-radius: 22px 22px var(--radius) var(--radius);
-  padding: 24px; box-shadow: var(--shadow);
+  padding: 1.5rem; box-shadow: 8px 8px 0 0 var(--black);
   transition: transform .18s ease, box-shadow .18s ease;
   display: flex; flex-direction: column; gap: 14px; min-height: 260px;
 }
