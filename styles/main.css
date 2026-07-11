@@ -511,3 +511,26 @@ body { padding-bottom: 76px; }
   text-transform: uppercase;
 }
 .heritage-note svg { width: 16px; height: 16px; color: var(--blue); flex-shrink: 0; }
+
+/* ---------- Quote band (full-width brand promise) ---------- */
+.quote-band {
+  background: #2C3C83; color: var(--white);
+  border-top: 4px solid var(--black); border-bottom: 4px solid var(--black);
+  padding-block: clamp(72px, 12vw, 140px);
+  text-align: center;
+}
+.quote-band .container { max-width: 1080px; }
+.quote-band .eyebrow {
+  color: var(--white); font-family: "Space Mono", ui-monospace, SFMono-Regular, monospace;
+  font-size: 12px; letter-spacing: .28em; text-transform: uppercase;
+  justify-content: center; opacity: .85;
+}
+.quote-band .eyebrow::before { background: var(--white); }
+.quote-band p.promise {
+  margin: 24px auto 0;
+  font-family: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 900; text-transform: uppercase;
+  font-size: clamp(36px, 7vw, 96px);
+  letter-spacing: -0.04em; line-height: .95;
+  color: var(--white); max-width: 18ch;
+}
