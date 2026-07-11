@@ -118,10 +118,10 @@ p  { margin: 0 0 1em; }
 }
 .brand-mark {
   width: 40px; height: 40px; border-radius: 10px;
-  background: var(--blue); display: grid; place-items: center;
+  display: grid; place-items: center; overflow: hidden;
   border: var(--border);
 }
-.brand-mark img { width: 26px; height: 26px; }
+.brand-mark img { width: 40px; height: 40px; display: block; }
 .nav-links { display: none; }
 .nav-links a {
   font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em;
