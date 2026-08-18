@@ -518,3 +518,149 @@ body { padding-bottom: 76px; }
   letter-spacing: -0.02em; line-height: 1.05;
   color: var(--white); max-width: 20ch;
 }
+
+/* ==========================================================================
+   REDESIGN v2 — hero rebalance, trust-card fix, panel, icon buttons
+   ========================================================================== */
+.hero-layout { display: grid; gap: 32px; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 960px) {
+  .hero-layout { grid-template-columns: 1.25fr 0.75fr; gap: 48px; align-items: center; }
+}
+.hero-headline { margin-bottom: 1.5rem; }
+.hero-headline em { display: block; }
+.hero .hero-copy { margin-top: 0; }
+
+/* Hero stats panel (fills the old empty right column) */
+.hero-panel {
+  background: var(--blue); color: #fff;
+  border: var(--border-thick); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 28px;
+  display: flex; flex-direction: column; gap: 18px;
+}
+.hero-panel__stat {
+  display: flex; flex-direction: column; gap: 2px;
+  border-bottom: 2px solid rgba(255,255,255,.22); padding-bottom: 14px;
+}
+.hero-panel__stat:last-of-type { border-bottom: 0; padding-bottom: 0; }
+.hero-panel__stat .n {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(40px, 6vw, 56px); line-height: 1; letter-spacing: -.03em;
+}
+.hero-panel__stat .n small { font-size: .4em; margin-left: 5px; font-family: var(--font-mono); letter-spacing: 0; }
+.hero-panel__stat .l {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase; color: rgba(255,255,255,.85);
+}
+.hero-panel__cta {
+  display: inline-flex; justify-content: center; align-items: center;
+  background: #fff; color: var(--black);
+  border: var(--border-thick); border-radius: var(--radius-sm);
+  box-shadow: 4px 4px 0 0 rgba(0,0,0,.5); padding: 15px;
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em;
+  text-transform: uppercase; font-weight: 700; margin-top: 4px;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.hero-panel__cta:hover { transform: translate(-2px,-2px); box-shadow: 7px 7px 0 0 rgba(0,0,0,.5); }
+
+/* Trust cards — fix the jammed text with label + value structure */
+.trust-item { display: flex; flex-direction: column; gap: 4px; }
+.trust-item .k {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--gray-800);
+}
+.trust-item strong { margin-top: 0; }
+.trust-item--gen { flex-direction: row; align-items: flex-start; gap: 12px; }
+.trust-item--gen svg { width: 22px; height: 22px; color: var(--blue); flex-shrink: 0; margin-top: 2px; }
+.trust-item--gen > span { display: flex; flex-direction: column; gap: 4px; }
+
+/* Icons inside buttons / sticky call */
+.btn svg, .sticky-call a svg { width: 22px; height: 22px; flex-shrink: 0; }
+.heritage-pill svg { width: 16px; height: 16px; }
+
+/* ---------- Signature work (whole-house repipe / re-drain) ---------- */
+.bigwork { display: grid; gap: 24px; grid-template-columns: 1fr; }
+@media (min-width: 820px) { .bigwork { grid-template-columns: 1fr 1fr; } }
+.workcard {
+  border: var(--border-thick); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: clamp(24px, 3vw, 36px);
+  display: flex; flex-direction: column; gap: 14px;
+  background: var(--white);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.workcard:hover { transform: translate(-4px,-4px); box-shadow: 12px 12px 0 0 var(--black); }
+.workcard--blue { background: var(--blue); color: #fff; }
+.workcard--dark { background: var(--gray-800); color: #fff; }
+.workcard .kicker {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .16em;
+  text-transform: uppercase; opacity: .85;
+}
+.workcard h3 { font-size: clamp(28px, 4vw, 40px); margin: 0; }
+.workcard p { font-family: var(--font-serif); font-size: 16px; margin: 0; }
+.workcard__list { list-style: none; padding: 0; margin: 6px 0 0; display: grid; gap: 8px; }
+.workcard__list li {
+  position: relative; padding-left: 22px;
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.workcard__list li::before { content: "\2713"; position: absolute; left: 0; font-weight: 700; }
+.workcard__cta {
+  margin-top: auto; padding-top: 6px; align-self: flex-start;
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em;
+  text-transform: uppercase; font-weight: 700;
+  border-bottom: 2px solid currentColor;
+}
+
+/* ---------- Hero panel v2: honest credentials (no fabricated stats) ---------- */
+.hero-panel__eyebrow {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .18em;
+  text-transform: uppercase; color: rgba(255,255,255,.8); margin: 0 0 4px;
+}
+.hero-panel__facts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.hero-panel__facts li {
+  display: flex; gap: 12px; align-items: flex-start;
+  border-bottom: 2px solid rgba(255,255,255,.22); padding-bottom: 16px;
+}
+.hero-panel__facts li:last-child { border-bottom: 0; padding-bottom: 0; }
+.hero-panel__facts svg { width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px; }
+.hero-panel__facts span { display: flex; flex-direction: column; gap: 2px; }
+.hero-panel__facts strong {
+  font-family: var(--font-display); font-weight: 700; font-size: 17px; letter-spacing: -.01em; line-height: 1.15;
+}
+.hero-panel__facts span { font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.82); }
+.hero-panel__facts strong { color: #fff; text-transform: none; letter-spacing: -.01em; }
+
+/* ---------- Family Promise (signed pledge card) ---------- */
+.promise-card {
+  position: relative; background: var(--white);
+  border: var(--border-thick); border-radius: var(--radius);
+  box-shadow: var(--shadow-lg); padding: clamp(28px, 5vw, 60px);
+  max-width: 940px; margin-inline: auto; overflow: hidden;
+}
+.promise-card .eyebrow { margin-bottom: 14px; }
+.promise-card h2 { font-size: clamp(32px, 5.5vw, 60px); margin: 0 0 20px; }
+.promise-lead { font-family: var(--font-serif); font-size: clamp(17px, 2vw, 21px); max-width: 62ch; margin: 0 0 26px; }
+.promise-list { list-style: none; padding: 0; margin: 0 0 30px; display: grid; gap: 14px; }
+.promise-list li { display: flex; gap: 12px; align-items: flex-start; font-family: var(--font-serif); font-size: 16px; }
+.promise-list svg { width: 22px; height: 22px; color: var(--blue); flex-shrink: 0; margin-top: 3px; }
+.promise-sign {
+  font-family: "Caveat", cursive; font-weight: 700;
+  font-size: clamp(36px, 6vw, 56px); line-height: 1; margin: 0; color: var(--blue);
+}
+.promise-sign::before { content: "\2014\00a0"; color: var(--black); font-family: var(--font-display); font-size: .5em; vertical-align: middle; }
+.promise-stamp {
+  position: absolute; top: 22px; right: 22px;
+  width: 84px; height: 84px; border-radius: 50%;
+  background: var(--blue); color: #fff; border: var(--border-thick);
+  box-shadow: 4px 4px 0 0 var(--black);
+  display: grid; place-items: center; text-align: center;
+  font-family: var(--font-display); font-weight: 700; font-size: 17px; line-height: 1;
+  letter-spacing: -.02em; transform: rotate(9deg);
+}
+@media (max-width: 560px) { .promise-stamp { display: none; } }
+
+/* Hero wordmark: all blue */
+.hero-headline, .hero-headline em { color: var(--blue); }
+
+/* Breathing room below the hero trust row so cards don't kiss the next band */
+.hero { padding-bottom: clamp(56px, 8vw, 96px); }
+.trust { margin-top: 2.75rem; }
