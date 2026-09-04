@@ -664,3 +664,6 @@ body { padding-bottom: 76px; }
 /* Breathing room below the hero trust row so cards don't kiss the next band */
 .hero { padding-bottom: clamp(56px, 8vw, 96px); }
 .trust { margin-top: 2.75rem; }
+
+/* Quote-band handwritten CEO sign-off */
+.quote-band .quote-sign { font-family: "Caveat", cursive; font-weight: 700; color: var(--white); font-size: clamp(28px, 4vw, 44px); line-height: 1; margin: 1.6rem 0 0; }
