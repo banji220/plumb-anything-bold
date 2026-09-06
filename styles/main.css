@@ -668,10 +668,17 @@ body { padding-bottom: 76px; }
 /* Quote-band handwritten CEO sign-off */
 .quote-band .quote-sign { font-family: "Caveat", cursive; font-weight: 700; color: var(--white); font-size: clamp(28px, 4vw, 44px); line-height: 1; margin: 1.6rem 0 0; }
 
-/* Compact footer service-area links */
-.footer-areas { margin-top: 26px; padding-top: 22px; border-top: 1px solid rgba(0,0,0,.12); }
-.footer-areas h4 { font-family: var(--font-mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 14px; }
-.footer-areas__list { display: flex; flex-wrap: wrap; gap: 8px 18px; }
-.footer-areas__list a { font-size: 13px; white-space: nowrap; opacity: .82; }
-.footer-areas__list a:hover { text-decoration: underline; opacity: 1; }
-.footer-areas__all { font-weight: 700; opacity: 1 !important; color: var(--blue); }
+/* Designed footer service-area directory */
+.footer-areas { margin-top: 30px; padding-top: 26px; border-top: 2px solid rgba(0,0,0,.1); }
+.footer-areas__head { margin-bottom: 18px; }
+.footer-areas__head .eyebrow { margin-bottom: 8px; }
+.footer-areas__head h3 { font-family: var(--font-display); font-weight: 700; font-size: clamp(18px, 2.2vw, 24px); line-height: 1.1; margin: 0; color: var(--black); }
+.footer-areas__grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 6px; }
+@media (min-width: 560px) { .footer-areas__grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+@media (min-width: 820px) { .footer-areas__grid { grid-template-columns: repeat(5, minmax(0,1fr)); } }
+.footer-areas__grid a { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 10px; background: #fff; border: 1px solid rgba(0,0,0,.1); font-size: 13.5px; font-weight: 600; line-height: 1.15; color: var(--black); transition: transform .12s ease, background .12s ease, color .12s ease, box-shadow .12s ease; }
+.footer-areas__grid a svg { width: 15px; height: 15px; color: var(--blue); flex-shrink: 0; transition: color .12s ease; }
+.footer-areas__grid a:hover { background: var(--blue); color: #fff; border-color: var(--blue); transform: translate(-2px,-2px); box-shadow: 3px 3px 0 0 rgba(0,0,0,.18); }
+.footer-areas__grid a:hover svg { color: #fff; }
+.footer-areas__cta { display: inline-block; margin-top: 16px; font-family: var(--font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--blue); }
+.footer-areas__cta:hover { text-decoration: underline; }
