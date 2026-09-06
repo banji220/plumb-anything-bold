@@ -667,3 +667,11 @@ body { padding-bottom: 76px; }
 
 /* Quote-band handwritten CEO sign-off */
 .quote-band .quote-sign { font-family: "Caveat", cursive; font-weight: 700; color: var(--white); font-size: clamp(28px, 4vw, 44px); line-height: 1; margin: 1.6rem 0 0; }
+
+/* Compact footer service-area links */
+.footer-areas { margin-top: 26px; padding-top: 22px; border-top: 1px solid rgba(0,0,0,.12); }
+.footer-areas h4 { font-family: var(--font-mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 14px; }
+.footer-areas__list { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.footer-areas__list a { font-size: 13px; white-space: nowrap; opacity: .82; }
+.footer-areas__list a:hover { text-decoration: underline; opacity: 1; }
+.footer-areas__all { font-weight: 700; opacity: 1 !important; color: var(--blue); }
