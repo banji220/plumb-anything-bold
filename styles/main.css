@@ -1,13 +1,13 @@
 /* ==========================================================================
    Plumb Anything — Global stylesheet
    Neo-brutalism × Swiss editorial × Apple spacing
-   Palette: #39479D blue · #FFFFFF · #000000 · #F2F2F2 · #202020
+   Palette: #FF4B0B orange · #FFFFFF · #000000 · #F2F2F2 · #202020
    ========================================================================== */
 
 /* ---------- Tokens ---------- */
 :root {
-  --blue: #39479d;
-  --blue-ink: #2a3778;
+  --blue: #ff4b0b;
+  --blue-ink: #cc3d08;
   --white: #ffffff;
   --black: #000000;
   --gray-050: #f7f7f7;
@@ -124,6 +124,7 @@ p  { margin: 0 0 1em; }
   flex-shrink: 0;
 }
 .brand-mark img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.brand-logo { height: 52px; width: auto; display: block; flex-shrink: 0; }
 .nav-links { display: none; }
 .nav-links a {
   font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em;
@@ -497,7 +498,7 @@ body { padding-bottom: 76px; }
 
 /* ---------- Quote band (full-width brand promise) ---------- */
 .quote-band {
-  background: #2C3C83; color: var(--white);
+  background: #ff4b0b; color: var(--white);
   border-top: 4px solid var(--black); border-bottom: 4px solid var(--black);
   padding-block: clamp(4rem, 8vw, 6.5rem);
   padding-inline: clamp(24px, 8vw, 80px);
